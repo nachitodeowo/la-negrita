@@ -126,6 +126,33 @@ h2 {
 .btn-whatsapp:hover {
     transform: scale(1.1); 
 }
-.final{
-    background-color: black;
+/* DISEÑO DEL FOOTER / PIE DE PÁGINA */
+.final {
+    background-color: #111; /* Un negro un poco más suave y moderno */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px; /* Lo separa de los platos de arriba */
+}
+
+/* Forzamos que el título y texto dentro del footer sean claros */
+.final h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.final p {
+    color: #ccc; /* Un gris clarito para el texto descriptivo */
+    margin-bottom: 20px;
+}
+
+.final iframe {
+    border-radius: 10px; /* Redondea las esquinas del mapa */
+    margin-bottom: 20px;
+}
+
+.derechos {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 30px;
 }
