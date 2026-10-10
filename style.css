@@ -147,6 +147,7 @@ h2 {
 }
 
 .final iframe {
+    width: 100%;
     border-radius: 10px; /* Redondea las esquinas del mapa */
     margin-bottom: 20px;
 }
