@@ -22,8 +22,8 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
 }
 .busqueda img{
-    width: 60px;
-    height: 40px;
+    width: 60;
+    height: 60px;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -157,3 +157,39 @@ h2 {
     color: #777;
     margin-top: 30px;
 }
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* El espacio de separación entre Facebook e Instagram */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* CADA ICONO Y SU TEXTO INDIVIDUAL */
+.logo-item {
+    display: flex;
+    flex-direction: column; /* Pone el texto debajo del ícono */
+    align-items: center;
+    text-decoration: none; /* Le quita la raya azul fea de los links */
+    color: white; /* Color del texto */
+    transition: transform 0.3s; /* Prepara un efecto suave */
+}
+
+/* EFECTO ZOOM AL PASAR EL MOUSE (Para que se vea profesional) */
+.logo-item:hover {
+    transform: scale(1.1);
+}
+
+.logo-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px; /* Separación entre la imagen y el texto */
+    object-fit: contain; /* Evita que la imagen se deforme */
+}
+
+.logo-item span {
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif; /* Puedes cambiar esto por la fuente que estés usando */
+}
+
