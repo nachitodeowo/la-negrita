@@ -22,7 +22,7 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
 }
 .busqueda img{
-    width: 60px;
+    width: 60;
     height: 60px;
     border-radius: 8px;
     object-fit: cover;
@@ -33,6 +33,9 @@ body {
 }
 
 .busqueda a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f0f0f0;
     border: none;
     border-radius: 20px;
@@ -41,13 +44,11 @@ body {
     color: #555;
     white-space: nowrap;
     cursor: pointer;
-    
 }
 
 .busqueda a:hover {
     background-color: #e53935;
     color: white;
-    
 }
 
 /* CONTENEDOR DE LA CARTA */
@@ -128,3 +129,70 @@ h2 {
 .btn-whatsapp:hover {
     transform: scale(1.1); 
 }
+/* DISEÑO DEL FOOTER / PIE DE PÁGINA */
+.final {
+    background-color: #111; /* Un negro un poco más suave y moderno */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px; /* Lo separa de los platos de arriba */
+}
+
+/* Forzamos que el título y texto dentro del footer sean claros */
+.final h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.final p {
+    color: #ccc; /* Un gris clarito para el texto descriptivo */
+    margin-bottom: 20px;
+}
+
+.final iframe {
+    width: 100%;
+    border-radius: 10px; /* Redondea las esquinas del mapa */
+    margin-bottom: 20px;
+}
+
+.derechos {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 30px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* El espacio de separación entre Facebook e Instagram */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* CADA ICONO Y SU TEXTO INDIVIDUAL */
+.logo-item {
+    display: flex;
+    flex-direction: column; /* Pone el texto debajo del ícono */
+    align-items: center;
+    text-decoration: none; /* Le quita la raya azul fea de los links */
+    color: white; /* Color del texto */
+    transition: transform 0.3s; /* Prepara un efecto suave */
+}
+
+/* EFECTO ZOOM AL PASAR EL MOUSE (Para que se vea profesional) */
+.logo-item:hover {
+    transform: scale(1.1);
+}
+
+.logo-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px; /* Separación entre la imagen y el texto */
+    object-fit: contain; /* Evita que la imagen se deforme */
+}
+
+.logo-item span {
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif; /* Puedes cambiar esto por la fuente que estés usando */
+}
+
